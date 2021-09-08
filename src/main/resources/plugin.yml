@@ -1,0 +1,13 @@
+name: DongGop
+version: '${project.version}'
+main: net.danh.donggop.Main
+api-version: 1.13
+prefix: DG-BETA
+load: STARTUP
+depend: [ PlayerPoints ]
+authors: [ VoChiDanh ]
+description: Dong gop tien se duoc thuong
+commands:
+  cfund:
+    description: "Opens funding menu"
+    usage: /<command>

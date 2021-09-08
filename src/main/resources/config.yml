@@ -1,0 +1,55 @@
+slots: 27
+  invtitle: "&aCrowdfunding"
+  guisettings:
+    timeday:
+      item: clock
+      name: "&6&lSet time to day"
+      price: 10  #Price to fundc
+      goal: 30  #Command will execute when reached
+      commands:
+        - "time set day"
+      slot: 13 #Inventory slot of item
+      message: "&eThe time has been set to day" #Message to send
+      uselimit: 2 ## of times players can fund
+    giveall:
+      item: oak_log
+      name: "&6&lGive all one diamond"
+      price: 10
+      goal: 20
+      commands:
+        - "give @a diamond 1"
+      slot: 14
+      message: "&bThe time has been set to night"
+      uselimit: 2
+    lastfunder:
+      item: diamond_sword
+      name: "&6&lLast clicker gets diamond kit"
+      price: 10
+      goal: 20
+      message: "&bThe winner is &e@l&b!"
+      commands:
+        - "give @l diamond_sword 1"
+        - "give @l diamond_pickaxe 1"
+        - "give @l diamond_axe 1"
+        - "give @l diamond_shovel 1"
+        - "give @l diamond_hoe 1"
+        - "give @l diamond_helmet 1"
+        - "give @l diamond_chestplate 1"
+        - "give @l diamond_leggings 1"
+        - "give @l diamond_boots 1"
+      slot: 15
+      uselimit: 2
+    rFund:
+      item: diamond
+      name: "&6&lGive random player stack of diamonds"
+      price: 100
+      goal: 1000
+      commands:
+        - "give @r diamond 64"
+      message: "&bThe winner is &e@r&b!"
+      slot: 5
+      uselimit: 2
+
+
+
+
